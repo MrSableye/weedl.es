@@ -28,6 +28,6 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-west-2
       - name: Clean S3 bucket
-        run: aws s3 rm s3://weedles/data --recursive --exclude "data/*" --exclude "pulls/*"
+        run: aws s3 rm s3://weedles --recursive --exclude "data/*" --exclude "pulls/*"
       - name: Deploy site to S3 bucket
         run: aws s3 sync ./build/ s3://weedles
