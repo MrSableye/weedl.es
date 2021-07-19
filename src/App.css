@@ -1,0 +1,16 @@
+@keyframes weedle-walk {
+  from {
+    background-position: -10% center;
+  }
+  to {
+    background-position: 110% center;
+  }
+}
+
+#weedle-header {
+  background-image: url('./weedle.gif');
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 44px 42px;
+  animation: weedle-walk 8s linear infinite;
+}
