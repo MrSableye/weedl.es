@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-size: 14pt;
+  font-family: Courier, monospace;
+}
+
+a {
+  color: #444444;
+}
+
+a:hover {
+  color: #888888;
+}
+
+main {
+  text-align: center;
+  width: 700px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main > header {
+  font-size: 24pt;
+  font-weight: bold;
+}
+
+header {
+  font-weight: bold;
+}
+
+#forest, section, article > img {
+  border: 4px solid black;
+}
+
+#forest, article {
+  width: 100%;
+}
+
+#forest {
+  box-sizing: border-box;
+  height: 404px;
+  background-color: #222222;
+  background-image: url('img/forest.png');
+  background-position: top center;
+}
+
+article {
+  margin-top: 4px;
+  display: flex;
+  gap: 4px;
+  justify-content: space-between;
+}
+
+article > img {
+  width: 180px;
+  height: 180px;
+  flex: 0 1 auto;
+}
+
+article > section {
+  position: relative;
+  padding: 8px;
+  text-align: justify;
+  flex: 1 1 auto;
+}
+
+section > footer {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  text-align: right;
+}
